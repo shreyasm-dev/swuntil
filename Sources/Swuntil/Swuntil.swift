@@ -1,6 +1,5 @@
-public struct Swuntil {
-  public private(set) var text = "Hello, World!"
-  
-  public init() {
+func until(_ condition: () -> Bool, perform: () -> Void) {
+  while (!condition()) {
+    perform()
   }
 }
