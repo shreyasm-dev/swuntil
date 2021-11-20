@@ -1,4 +1,4 @@
-func until(_ condition: () -> Bool, perform: () -> Void) -> Void {
+public func until(_ condition: () -> Bool, perform: () -> Void) {
   while (!condition()) {
     perform()
   }
